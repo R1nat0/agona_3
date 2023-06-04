@@ -1,0 +1,81 @@
+@import "../styles/colors";
+
+.header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+.logo{
+    width: 94px;
+    height: 20px;
+}
+.list{
+    margin-left: 30px;
+    display: flex;
+    gap: 1%
+}
+.userInfo{
+    margin-right: 50px;
+    display: flex;
+    gap: 10%
+}
+.location{
+    display: flex;
+}
+.price{
+    display: flex;
+}
+.user{
+    display: flex;
+}
+hr{
+    opacity: 20%;
+}
+.locationIcon, .priceIcon, .profileImage{
+    padding-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+.leftside{
+    display: flex;
+}
+
+.discription{
+    margin-top: 6px;
+}
+.btn{
+    position: relative;
+    width: 110px;
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    bottom: -20px; /* Расстояние от элемента */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $lightGreen;
+    transform: scaleX(0); /* Начальное состояние - без подчеркивания */
+    transition: transform 0.3s ease;
+}
+
+.btn:hover::after,
+.btn.active::after {
+    font-weight: bold;
+    transform: scaleX(1); /* Активное состояние - с подчеркиванием */
+}
+
+.navList{
+    display: flex;
+}
+
+.nav-link{
+    font-weight: normal;
+}
+.active{
+    font-weight: bold;
+}

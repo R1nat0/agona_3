@@ -1,0 +1,23 @@
+@import "../../styles/colors";
+.line{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    margin-right: 15px;
+    display: flex;
+    gap: 5%;
+}
+.btn{
+    width: 150px;
+    gap: 1%;
+    background: $darkWhite;
+    border-radius: 20px;
+
+}
+.btn:hover{
+    background: black;
+    color: #cccccc;
+}

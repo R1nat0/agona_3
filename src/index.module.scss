@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.mainContent{
+    margin-right: 220px;
+    margin-left: 220px;
+}
+.centerContent{
+    display: flex;
+}
